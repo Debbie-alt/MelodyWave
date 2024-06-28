@@ -1,0 +1,6 @@
+@MelodyWaveAPI1._0_HostAddress = http://localhost:5069
+
+GET {{MelodyWaveAPI1._0_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
