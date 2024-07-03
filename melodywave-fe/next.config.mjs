@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: "/MELODY-WAVE-1",
+  // basePath: "/MELODYWAVE-1/melodywave-fe/src/pages/index.js",
   output: "export",  // <=== enables static exports
 
 };
