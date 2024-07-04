@@ -15,7 +15,7 @@ const Navbar = () => {
 
       <div className='navlinks flex space-x-8 absolute right-[10%] items-center'>
         <a href="" className='px-3 py-2 border border-purple-500 rounded-full hover:bg-purple-500'>Stream Now </a>
-        <a href="" className='hover:opacity:80 hover:text-purple-400' 
+        <a href="#features" className='hover:opacity:80 hover:text-purple-400' 
         // onClick={scrolltoFeatures}
         >Features</a>
         <a href="" className='hover:opacity:80 hover:text-purple-400'

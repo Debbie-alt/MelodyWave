@@ -8,8 +8,8 @@ const Features = () => {
 
     // })
   return (
-<section className=' w-screen'>
-    <h1 className=' text-3xl font-semibold  bg-white p-10 '>Features</h1>
+<section className=' w-screen' id='features'>
+    <h1 className=' text-3xl font-semibold  bg-[#6247aa] p-10 '>Features</h1>
 
 
 

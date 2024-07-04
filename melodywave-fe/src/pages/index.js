@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main
-      className={`relative flex min-h-screen flex-col bg-gradient-to-tr from-purple-400 via-black to-[#040f0f] ${inter.className}`}>
+      className={` w-screen relative flex min-h-screen flex-col bg-gradient-to-tr from-purple-400 via-black to-[#040f0f] ${inter.className}`}>
 
        <Navbar/>
        <Header/>

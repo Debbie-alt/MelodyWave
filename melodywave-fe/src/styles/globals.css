@@ -36,3 +36,6 @@ body {
   --light-pple: #a06cd5;
   --medium-pple: #6247aa;
 }
+.glass-container{
+  background-color: rgb(225, 225, 225, 0.1);
+}
