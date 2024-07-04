@@ -14,7 +14,7 @@ const About = () => {
         Aos.init({ duration: 1000 });
       }, []);
   return (
-     <section className='flex flex-col space-y-5 bg-inherit p-20 bg-gradient-to-tr from-purple-300 via-black to-[#040f0f]' id='about'>
+     <section className='-mt-6 flex flex-col space-y-5 bg-inherit p-20 bg-gradient-to-tr from-purple-300 via-black to-[#040f0f]' id='about'>
         <h1 className='text-white text-3xl font-semibold' data-aos="zoom-in">About MelodyWave</h1>
 
         <div className='flex flex-col md:flex-row md:space-x-24 w-screen '>

@@ -44,7 +44,7 @@ export const Header = () => {
       <h1 className=" text-2xl sm:text-4xl font-bold right-[10%] bottom-[35%] absolute bg-clip-text text-transparent bg-gradient-to-br from-yellow-400 via-purple-400 to-yellow-400">
         Unlimited Fun!
       </h1>
-      <div className=" text-sm absolute w-full h-24 mt-[60vh] glass-container  text-left px-7 sm:px-20 py-10 text-yellow-200 inline-flex items-center"> VISIT THE LIVE APP AND STREAM NOW! 
+      <div className=" text-sm absolute w-full h-24 mt-[60vh] glass-container  text-left px-7 sm:px-20 py-10 text-white inline-flex items-center"> VISIT THE LIVE APP AND STREAM NOW! 
         &nbsp;<button className='px-3 py-2 rounded-full border'>&rarr;</button>  
        
       </div>

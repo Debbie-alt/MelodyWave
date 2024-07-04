@@ -30,7 +30,7 @@ const Features = () => {
 
 
       <div  className='flex flex-col sm:flex-row-reverse items-center bg mx-auto justify-evenly '>
-        <Lottie animationData={animationData} loop={true} autoplay={true} style={{ height: 400,  }} className='w-screen sm:w-[50vw]' data-aos="flip-right" />
+        <img src='/nobgbookmark.png' className='w-screen sm:w-[30vw] rounded-full shadow-xl shadow-purple-700' data-aos="flip-right" />
          <div className='flex flex-col w-[90vw] sm:w-[40vw] mb-6 p-5' data-aos="flip-left">
             <figure className=''>
             <h1 className='text-lg font-semibold font-serif italic mb-4'>Bookmark songs you love</h1>
@@ -43,11 +43,11 @@ const Features = () => {
 
          </div>
       </div>
-      <div data-aos='fade-up' className='features flex flex-col sm:flex-row items-center bg mx-auto justify-evenly  w-screen bg-gradient-to-br from-purple-400 via-white to-purple-400 '>
+      <div data-aos='zoom-in' className=' text-white features flex flex-col sm:flex-row items-center bg mx-auto justify-evenly  w-screen bg-gradient-to-br from-purple-400 via-black to-purple-400'>
         <Lottie animationData={animationData} loop={true} autoplay={true} style={{ height: 400,  }} className='w-screen sm:w-[50vw]' />
          <div className='flex flex-col w-[90vw] sm:w-[40vw] mb-6 p-5'>
             <figure className=''>
-            <h1 className='text-lg font-semibold font-serif italic mb-4'>Stream Your Favourite Music </h1>
+            <h1 className='text-lg font-semibold font-serif italic mb-4'>Share Music </h1>
             <p className='text-wite mb-3 text-sm sm:text-md '>Discover the joy of unlimited music streaming with MelodyWave. Dive into a vast, curated library of songs spanning every genre and era, from chart-topping hits to hidden gems. 
                 
               </p>

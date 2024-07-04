@@ -18,7 +18,7 @@ const Navbar = () => {
         <a href="#features" className='hover:opacity:80 hover:text-purple-400' 
         // onClick={scrolltoFeatures}
         >Features</a>
-        <a href="" className='hover:opacity:80 hover:text-purple-400'
+        <a href="#about" className='hover:opacity:80 hover:text-purple-400'
         // onClick={scrolltoAbout}
 
         >About</a>
