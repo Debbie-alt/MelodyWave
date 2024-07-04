@@ -14,11 +14,11 @@ const Navbar = () => {
       </div>
 
       <div className='navlinks  space-x-8 absolute right-[10%] items-center hidden sm:flex'>
-        <a href="https://debbiealt.tech/" className='px-3 py-2 border border-purple-500 rounded-full hover:bg-purple-500'>Stream Now </a>
+        <a href="https://debbiealt.tech/" target='_blank' className='px-3 py-2 border border-purple-500 rounded-full hover:bg-purple-500'>Stream Now </a>
         <a href="#features" className='hover:opacity:80 hover:text-purple-400' 
         // onClick={scrolltoFeatures}
         >Features</a>
-        <a href="#about" className='hover:opacity:80 hover:text-purple-400'
+        <a href="#" className='hover:opacity:80 hover:text-purple-400'
         // onClick={scrolltoAbout}
 
         >About</a>

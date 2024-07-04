@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export const Header = () => {
   return (
-    <header className="text-white relative h-[90vh] flex flex-col items-center justify-center   bg-gradient-to-tr from-purple-400 via-black to-[#040f0f]">
+    <header className="text-white relative h-[90vh] flex flex-col items-center justify-center   bg-gradient-to-tr from-purple-300 via-black to-[#040f0f]">
       <h1 className="text-2xl sm:text-4xl font-bold left-[10%] top-[10%] sm:top-[20%] absolute bg-clip-text text-transparent bg-gradient-to-tr from-transparent via-purple-300 to-yellow-400">
         Unlimited Music,
       </h1>
