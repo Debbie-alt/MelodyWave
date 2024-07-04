@@ -4,30 +4,35 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: #332d35;
+  --background-middle-rgb: #c5c5e0; /* Light purple shade */
+  --background-end-rgb: #040f0f;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: #040f0f;
+    --background-middle-rgb: #e5dcff; /* Light purple shade */
+    --background-end-rgb: #040f0f;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* background: #040f0f; */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.colors {
+  --nearblack: #040f0f;
+  --blueish: #102b3f;
+  --lavender: #e2cfea;
+  --light-pple: #a06cd5;
+  --medium-pple: #6247aa;
 }
