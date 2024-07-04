@@ -14,21 +14,17 @@ Social Sharing: Share your favorite songs and playlists with friends.
 Technologies Used
 Frontend: React, Redux, HTML5, CSS3, JavaScript
 Backend: C#
-Database: MySQL
+Database: MicroSoft SQL Server
 Authentication: JWT (JSON Web Tokens)
 Cloud Storage: AWS S3
 Streaming: Web Audio API
-Testing: Jest, Enzyme
-Deployment: Docker, Kubernetes
 Getting Started
 Prerequisites
 Ensure you have the following installed on your local machine:
 
 Node.js (v14 or later)
 npm (v6 or later)
-MongoDB
 Docker (for deployment)
-AWS account (for cloud storage)
 Installation
 Clone the Repository:
 
