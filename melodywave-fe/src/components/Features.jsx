@@ -10,7 +10,7 @@ const Features = () => {
   }, []);
 
   return (
-    <section className='w-screen   bg-gradient-to-br from-purple-400 via-white to-purple-400' id='features'>
+    <section className='w-screen   ' id='features'>
       <h1 className='text-3xl font-semibold bg- p-10 text-whie  bg-gradient-to-br from-purple-300 via-white to-purple-300 ' data-aos='zoom-in'>Features</h1>
       <div data-aos='fade-up' className='flex items-center bg mx-auto justify-evenly  w-screen bg-gradient-to-br from-purple-300 via-white to-purple-300 '>
         <Lottie animationData={animationData} loop={true} autoplay={true} style={{ height: 400,  }} className='w-[50vw]' />
