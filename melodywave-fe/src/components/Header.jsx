@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export const Header = () => {
   return (
-    <header className=" text-white relative h-[90vh] flex flex-col items-center justify-center   bg-gradient-to-tr from-purple-300 via-black to-[#040f0f]">
+    <header className=" text-white relative h-[90vh] flex flex-col items-center justify-center bg-gradient-to-tr from-purple-300 via-black to-[#040f0f]">
       <h1 className="text-2xl sm:text-4xl font-bold left-[10%] top-[10%] sm:top-[20%] absolute bg-clip-text text-transparent bg-gradient-to-tr from-transparent via-purple-300 to-yellow-400">
         Unlimited Music,
       </h1>
@@ -14,11 +14,7 @@ export const Header = () => {
         width={160}
         initial={{ scale: 0, rotate: 180, }}
         animate={{ rotate: 360, scale: 1 }}
-        transition={{
-            type: "spring",
-            duration:3,
-            stiffness: 260,
-            damping: 20}}/>
+        transition={{ type: "spring", duration:3, stiffness: 260, damping: 20}}/>
        
        <motion.img
         src="/giphyeadphone.gif"
@@ -27,13 +23,8 @@ export const Header = () => {
         width={70}
         initial={{ scale: 0 }}
         animate={{  scale: 1 }}
-        transition={{
-            type: "spring",
-            delay:0.5,
-            stiffness: 500,
-            damping: 20
-  }}
-      />
+        transition={{type: "spring", delay:0.5, stiffness: 500, damping: 20 }}/>
+      
       <img
         src="/futuristicmusic.png"
         width={500}
