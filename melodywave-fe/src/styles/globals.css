@@ -1,9 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
+@import url('/melodywave-fe/src/font/Geist-Black-BF6569491cec591.otf');
 
 
+.geist-regular{
+  font-family: 'Geist-Black, sans-serif';
+}
   .glass-container{
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(7px);
