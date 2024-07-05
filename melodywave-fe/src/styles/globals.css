@@ -1,16 +1,14 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
   
 
 
   .glass-container{
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(7px);
-
-
-
   }
+
   .glassycard {
     padding: 20px;
     border-radius: 15px;
@@ -20,11 +18,12 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: white;
   }
+
   .glassycard:hover{
     background: rgba(255, 255, 255, 0.2
     );
-
   }
+
   .features {
     position: relative;
     clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 90%);
@@ -32,4 +31,15 @@
   #about{
      position: relative;
     clip-path: polygon(0 0, 100% 6%, 100% 100%, 0 90%);
+  }
+  @media (max-width:643px) {
+    #about{
+      clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 90%);
+
+    }
+    .funmi-card{
+      
+      z-index: 9 !important;
+    }
+    
   }

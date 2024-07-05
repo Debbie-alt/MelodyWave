@@ -44,14 +44,14 @@ const Features = () => {
          </div>
       </div>
       <div data-aos='zoom-in' className=' text-white features flex flex-col sm:flex-row items-center bg mx-auto justify-evenly py-5 w-screen bg-gradient-to-br from-purple-400 via-black to-purple-400'>
-      <img src='/share.png' className=' py-10 w-screen sm:w-[20vw] rounded-full shadow-xl shadow-purple-700' data-aos="flip-right" />
+      <img src='/share.png' className=' py-10 w-[50vw] sm:w-[20vw] rounded-full shadow-xl shadow-purple-700' data-aos="flip-right" />
       <div className='flex flex-col w-[90vw] sm:w-[40vw] mb-6 p-5'>
             <figure className=''>
-            <h1 className='text-lg font-semibold font-serif italic mb-4'>Share Music </h1>
+            <h1 className='text-lg font-semibold font-serif italic mb-4 mt-5 sm:mt-12 md:mt-5'>Share Music </h1>
             <p className='text-wite mb-3 text-sm sm:text-md '>MelodyWave makes it easy to share your favorite tracks with friends and family. Dive into our extensive library of songs from every genre and era, and instantly share the hits and hidden gems you discover. Connect through the music you love.
                 
               </p>
-            <button className='px-5 py-2.5 bg-gradient-to-tr from-[#c42fa2] via-black to-[#c42fa2] rounded-full text-white 
+            <button className='mb-4 px-5 py-2.5 bg-gradient-to-tr from-purple-300 via-black to-purple-300 rounded-full text-white 
             hover:opacity-80'>Start Streaming &rarr;</button>
             </figure>
 

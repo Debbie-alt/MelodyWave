@@ -14,12 +14,12 @@ const About = () => {
         Aos.init({ duration: 1000 });
       }, []);
   return (
-     <section className='-mt-6 flex flex-col space-y-5 bg-inherit p-20 bg-gradient-to-tr from-purple-300 via-black to-[#040f0f]' id='about'>
-        <h1 className='text-white text-3xl font-semibold' data-aos="zoom-in">About MelodyWave</h1>
+     <section className='-mt-12 sm:-mt-6 flex flex-col space-y-5 bg-inherit p-12 md:p-20 bg-gradient-to-tr from-purple-300 via-black to-[#040f0f]' id='about'>
+        <h1 className='text-white text-3xl font-semibold mt-7 md:mt-0' data-aos="zoom-in">About MelodyWave</h1>
 
-        <div className='flex flex-col md:flex-row md:space-x-24 w-screen '>
-         <div className='text-gray-300 w-[80vw] md:w-[40vw] leading-7 mt-8' data-aos="zoom-in">
-               <p>   
+        <div className='flex flex-col lg:flex-row md:space-x-24 w-screen '>
+         <div className='text-gray-300 w-[80vw] lg:w-[40vw] leading-7 mt-8 -mx-5 sm:-mx-0' data-aos="zoom-in">
+               <p className='text-sm sm:text-md leading-7'>   
                Our music streaming app was inspired by a love of music and a desire to create a more personalized listening experience. Unlike other platforms, we offer a vast music library, intelligent playlist curation, and community sharing features. We're committed to bringing the joy of music to every listener, anytime and anywhere. Join us and discover a new way to experience music.
                 
                </p> 
@@ -31,9 +31,9 @@ const About = () => {
                <hr className='mt-5' />
         </div>
 
-        <div className='mt-20'>
+        <div className='mt-20 -mx-5 sm:-mx-0'>
         <h3 className='text-yellow-200 font-semibold text-xl'>Developers and Contributors</h3>
-        <figure className='glassycard w-[80vw] md:w-[40vw] p-12  mt-7'
+        <figure className='glassycard w-[80vw] md:w-[60vw] lg:w-[40vw] p-12  mt-7'
         data-aos="slide-left"
          initial={{ scale: 0 }}
          animate={{  scale: 1 }}
@@ -91,20 +91,20 @@ const About = () => {
                 </TooltipContent>
                 </Tooltip>
             </TooltipProvider>
-
-            
-            
             </div>
-
         </figure>
 
-        <figure className='glassycard w-[80vw] md:w-[30vw] p-12  mt-7 ' data-aos="slide-right">
+        
+        <figure className='glassycard w-[80vw] md:w-[60vw] lg:w-[30vw] p-12  mt-7 ' data-aos="slide-right">
             <p className='text-xl font-serif text-left'>Fayemi Funmilayo</p>
-            <button className='px-6 py-2 mt-5 bg-gradient-to-tr from-yellow-200 via-purple-500 to-yellow-200 rounded-full'>Roles</button>
-            <small className=' mt-4 mx-5'>Frontend Developer and Database Administrator</small>
+            <div className=''>
+            <button className='px-6 py-2  mt-5 bg-gradient-to-tr from-yellow-200 via-purple-500 to-yellow-200 rounded-full'>Roles</button>
+            <small className=' mt-4 mx-5 '>Frontend Developer and Database Administrator</small>
 
+            </div>
+           
             <div className='flex space-x-5 mt-6 items-center'>
-                <p>Contact &rarr;</p>
+                <p className=''>Contact &rarr;</p>
 
             <TooltipProvider>
               <Tooltip>
