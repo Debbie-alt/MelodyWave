@@ -18,7 +18,7 @@ export const Header = () => {
        
        <motion.img
         src="/giphyeadphone.gif"
-        alt="sun with headphones"
+        alt="sun with earphones"
         className='absolute right-[15%] sm:right-[20%] top-[5%] sm:top-[8%]'
         width={70}
         initial={{ scale: 0 }}
