@@ -38,7 +38,7 @@ Clone the Repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/melodywave.git
+git clone https://github.com/Debbie-alt/MelodyWave1.git
 cd melodywave
 Install Dependencies:
 
