@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basepath: "/MelodyWave",
+  // basepath: "/MelodyWave",
   output: "export", // Enables static exports
   images: {
     unoptimized: true,
