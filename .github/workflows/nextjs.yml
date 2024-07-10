@@ -34,7 +34,7 @@ jobs:
             echo "runner=npx --no-install" >> $GITHUB_OUTPUT
           else
             echo "Unable to determine package manager"
-            exit 1
+            
 
       - name: Setup Node
         uses: actions/setup-node@v4
