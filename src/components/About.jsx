@@ -7,7 +7,7 @@ import {
     TooltipContent,
     TooltipProvider,
     TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from "../components/ui/tooltip";
 
 const About = () => {
     // Initialize AOS (Animate On Scroll) for scroll animations
