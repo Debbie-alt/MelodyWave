@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { createUserWithEmailAndPassword } from "firebase/auth"
 
 export default function Login() {
 
@@ -9,7 +10,7 @@ export default function Login() {
             <main class=" bg-gradient-to-tr from-purple-400 to-[#040f0f]">
 
                 <section className="container flex flex-col items-center justify-center relative  h-screen">
-                    <h1 className="text-center text-white text-3xl mb-12  quicksand-bold -mt-2" >HELLO AGAIN!</h1>
+                    <h1 className="text-cente text-white text-3xl mb-12  quicksand-bold -mt-2 font-serif italic" >Sign in to stream!</h1>
                     <figure className="  rounded-full" >
                         <div class="absolute left-[47%] lg:-mt-[2%] p-2 rounded-full bg-black log-icon">
                             <img width="58" height="58" src="https://img.icons8.com/external-isometric-vectorslab/68/external-Headphones-christmas-and-new-year-isometric-vectorslab.png" alt="external-Headphones-christmas-and-new-year-isometric-vectorslab" className=' w-[38px] h-[38px] sm:w-[58px] sm:h-[58px]' />
