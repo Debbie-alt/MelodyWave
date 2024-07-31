@@ -1,4 +1,9 @@
+import { useState } from "react"
+
 export default function Login() {
+
+       const [email, setEmail] = useState('')
+       const [password, setPassword]  = useState('')
     return (
         <>
             <main class=" bg-gradient-to-tr from-purple-400 to-[#040f0f]">
@@ -15,12 +20,12 @@ export default function Login() {
                             <fieldset class=" space-y-6 w-3/5">
                                 <div class="relative w-full">
                                     <img width="24" height="24" src="https://img.icons8.com/ios/50/username.png" alt="username" className="absolute mt-3 mx-3 mr-3" />
-                                    <input type="text" placeholder="  Enter your email address" class="px-9 py-3 rounded-full bg-slate-200 w-full quicksand-reg" />
+                                    <input type="text" placeholder="  Enter your email address" class="px-9 py-3 rounded-full bg-slate-200 w-full quicksand-reg" value={email} onChange={(e)=> setEmail(e.target.value)} />
                                 </div>
 
                                 <div className="relative w-full">
                                     <img width="24" height="24" src="https://img.icons8.com/cotton/64/lock--v3.png" alt="lock--v3" className="absolute mt-3 mx-3 mr-3" />
-                                    <input type="password" placeholder="  ••••••••••••" class="px-9 py-3 rounded-full bg-slate-200 w-full" />
+                                    <input type="password" placeholder="  ••••••••••••" class="px-9 py-3 rounded-full bg-slate-200 w-full"  value={password} onChange={(e)=> setPassword(e.target.value)}/>
                                 </div>
                             </fieldset>
                             <button type="submit" className="mb-3 mt-5 px-10 py-2  rounded-full hover:opacity-80 bg-gradient-to-br from-yellow-200 via-black to-yellow-200 text-white">Login</button>
