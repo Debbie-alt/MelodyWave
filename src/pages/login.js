@@ -1,10 +1,28 @@
 import { useState } from "react"
-import { createUserWithEmailAndPassword } from "firebase/auth"
+import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth"
+import { auth, googleprovider } from "../config/firebase.js"
 
 export default function Login() {
 
        const [email, setEmail] = useState('')
        const [password, setPassword]  = useState('')
+
+
+       const signIn = async ()=>{
+        await signInWithEmailAndPassword(auth, email, password)
+        alert('login successful')
+       }
+          
+
+       const signInWithGoogle = async()=>{
+         try{
+            await signInWithPopup(auth, googleprovider)
+         }
+         catch(err){
+            console.error(err)
+         }
+       }
+
     return (
         <>
             <main class=" bg-gradient-to-tr from-purple-400 to-[#040f0f]">
@@ -15,7 +33,7 @@ export default function Login() {
                         <div class="absolute left-[47%] lg:-mt-[2%] p-2 rounded-full bg-black log-icon">
                             <img width="58" height="58" src="https://img.icons8.com/external-isometric-vectorslab/68/external-Headphones-christmas-and-new-year-isometric-vectorslab.png" alt="external-Headphones-christmas-and-new-year-isometric-vectorslab" className=' w-[38px] h-[38px] sm:w-[58px] sm:h-[58px]' />
                         </div>
-                        <form action="" method="POST" class=" logform p-7 w-[85vw] sm:w-[50vw] flex flex-col items-center rounded-l-full  rounded-b-full">
+                        <form onSubmit={signIn} class=" logform p-7 w-[85vw] sm:w-[50vw] flex flex-col items-center rounded-l-full  rounded-b-full">
                             <h2 class="text-center text-md md:text-lg text-white mb-10 mt-5 quicksand-reg font-serif italic">
                                 Welcome back to Melodywave </h2>
                             <fieldset class=" space-y-6 w-3/5">
@@ -31,6 +49,19 @@ export default function Login() {
                             </fieldset>
                             <button type="submit" className="mb-3 mt-5 px-10 py-2  rounded-full hover:opacity-80 bg-gradient-to-br from-yellow-200 via-black to-yellow-200 text-white">Login</button>
                         </form>
+                        <p className="text-white font-serif italic text-center mb-3">or</p>
+                        {/* <hr/> */}
+                          <div className="space-y-5">
+                             <button onClick={signInWithGoogle} className="flex items-center justify-center space-x-10 border  border-purple-200 p-2 rounded-full w-3/4 mx-auto text-white">
+                             <img width="34" height="34" src="https://img.icons8.com/3d-fluency/94/google-logo.png" alt="google-logo"/>
+                                <span>Login with Google</span>
+                             </button>
+
+                             <button className="flex items-center justify-center space-x-10 border  border-purple-200 p-2 rounded-full w-3/4 mx-auto text-white">
+                             <img width="34" height="34" src="https://img.icons8.com/ios-filled/50/FFFFFF/mac-os.png" alt="mac-os"/>
+                                <span>Login with Apple</span>
+                             </button>
+                          </div> 
                     </figure>
 
                 </section>
