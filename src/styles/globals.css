@@ -9,3 +9,12 @@
 .log-icon{
       z-index: 2;
 }
+.glassycard{
+      background-color:rgb(225, 225, 225, 0.14);
+      color: white;
+      border-radius: 10px;
+}
+.glassycard :hover{
+      /* background-color:rgb(225, 225, 225, 0.1); */
+
+}

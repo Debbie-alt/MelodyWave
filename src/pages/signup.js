@@ -27,7 +27,7 @@ export default function SignUp() {
       }
     return (
         <>
-            <main class=" bg-gradient-to-tr from-purple-400 to-[#040f0f]">
+            <main class=" bg-gradient-to-tr from-purple-400 to-[#040f0f] min-h-screen">
 
                 <section className="container flex flex-col items-center justify-center relative  py-14">
                     <h1 className="text-cente text-white text-3xl mb-12  quicksand-bold -mt-2 font-serif italic" >Create a MelodyWave Account!</h1>

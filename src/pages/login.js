@@ -7,13 +7,11 @@ export default function Login() {
        const [email, setEmail] = useState('')
        const [password, setPassword]  = useState('')
 
-
        const signIn = async ()=>{
         await signInWithEmailAndPassword(auth, email, password)
         alert('login successful')
        }
-          
-
+        
        const signInWithGoogle = async()=>{
          try{
             await signInWithRedirect(auth, googleprovider)
@@ -27,7 +25,7 @@ export default function Login() {
         <>
             <main class=" bg-gradient-to-tr from-purple-400 to-[#040f0f]">
 
-                <section className="container flex flex-col items-center justify-center relative  h-screen">
+                <section className="container flex flex-col items-center justify-center relative  min-h-screen">
                     <h1 className="text-cente text-white text-3xl mb-12  quicksand-bold -mt-2 font-serif italic" >Sign in to stream!</h1>
                     <figure className="  rounded-full" >
                         <div class="absolute left-[47%] lg:-mt-[2%] p-2 rounded-full bg-black log-icon">
