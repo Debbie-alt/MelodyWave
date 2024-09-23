@@ -2,12 +2,31 @@ import { React, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import {
-    Tooltip,
-    TooltipContent,
-    TooltipProvider,
-    TooltipTrigger,
-} from "../components/ui/tooltip";
+import dynamic from 'next/dynamic'
+
+// Dynamically import the named exports from "../components/ui/tooltip"
+const Tooltip = dynamic(() =>
+  import("../components/ui/tooltip").then(mod => mod.Tooltip),
+  { ssr: false }
+);
+
+const TooltipContent = dynamic(() =>
+  import("../components/ui/tooltip").then(mod => mod.TooltipContent),
+  { ssr: false }
+);
+
+const TooltipProvider = dynamic(() =>
+  import("../components/ui/tooltip").then(mod => mod.TooltipProvider),
+  { ssr: false }
+);
+
+const TooltipTrigger = dynamic(() =>
+  import("../components/ui/tooltip").then(mod => mod.TooltipTrigger),
+  { ssr: false }
+);
+
+
+
 
 const About = () => {
     // Initialize AOS (Animate On Scroll) for scroll animations
