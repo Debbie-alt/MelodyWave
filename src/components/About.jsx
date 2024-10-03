@@ -51,7 +51,7 @@ const About = () => {
                 </div>
 
                 <div className='mt-20 -mx-5 sm:-mx-0'>
-                    <h3 className='text-yellow-200 font-semibold text-xl'>Developers and Contributors</h3>
+                    <h3 className='text-yellow-300 font-semibold text-xl'>Developers and Contributors</h3>
                     
                     <figure className='glassycard w-[80vw] md:w-[60vw] lg:w-[40vw] p-12 mt-7' data-aos="slide-left" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", delay: 0.5, stiffness: 500, damping: 20 }}>
                         <p className='text-xl font-serif text-left'>Faisal Ali-Adebambo</p>
