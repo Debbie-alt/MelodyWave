@@ -20,9 +20,11 @@ const Navbar = () => {
         <div className='navlinks space-x-8 absolute right-[10%] items-center hidden sm:flex'>
           <Link href="/login" className='px-3 py-2 border border-purple-500 rounded-full hover:bg-purple-500'>
           Stream Now</Link>
+
+          
           <a href="#features" className='hover:opacity-80 hover:text-purple-400'>Features</a>
           <a href="#about" className='hover:opacity-80 hover:text-purple-400'>About</a>
-        </div>
+      </div>
       </div>
     </nav>
   );
