@@ -1,7 +1,9 @@
+'use client'
+
 import React from 'react';
 import { motion } from 'framer-motion';
 
-export const Header = () => {
+function Header ()  {
   return (
     <header className="text-white relative h-[90vh] flex flex-col items-center justify-center bg-gradient-to-tr from-purple-300 via-black to-[#040f0f]">
       {/* Main heading */}
@@ -53,3 +55,4 @@ export const Header = () => {
     </header>
   );
 };
+export default Header;

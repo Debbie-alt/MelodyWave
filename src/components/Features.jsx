@@ -1,8 +1,13 @@
+'use client';
+
 import React, { useEffect } from 'react';
+import dynamic from 'next/dynamic';
 import Aos from 'aos';
-import 'aos/dist/aos.css'; 
-import Lottie from 'lottie-react';
-import animationData from '../../public/Music.json'; 
+import 'aos/dist/aos.css';
+
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
+
+import animationData from '../../public/Music.json';
 
 const Features = () => {
   useEffect(() => {
@@ -16,8 +21,13 @@ const Features = () => {
 
       {/* Feature 1: Stream Music */}
       <div data-aos='fade-up' className='flex flex-col sm:flex-row items-center mx-auto justify-evenly w-screen'>
-        <Lottie animationData={animationData} loop={true} autoplay={true} style={{ height: 400 }} className='w-screen sm:w-[50vw]' />
-        <div className='flex flex-col w-[90vw] sm:w-[40vw] mb-6 p-5'>
+    <Lottie
+      animationData={animationData}
+      loop
+      autoplay
+      style={{ height: 400 }}
+      className="w-screen sm:w-[50vw]"
+    />        <div className='flex flex-col w-[90vw] sm:w-[40vw] mb-6 p-5'>
           <figure>
             <h1 className='text-lg font-semibold font-serif italic mb-4'>Stream Your Favourite Music</h1>
             <p className=' mb-3 text-sm sm:text-md'>
