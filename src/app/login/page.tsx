@@ -52,12 +52,12 @@ export default function Login() {
                         <p className="text-white font-serif italic text-center mb-3">or</p>
                         {/* <hr/> */}
                           <div className="space-y-5">
-                             <button onClick={signInWithGoogle} className="flex items-center justify-center space-x-10 border  border-purple-200 p-2 rounded-full w-3/4 mx-auto text-white">
+                             <button onClick={signInWithGoogle} className="flex items-center justify-center space-x-10border border-purple-600  bg-black/40 hover:opacity-70 cursor-pointer p-2 rounded-full w-3/4 mx-auto text-white">
                              <img width="30" height="30" src="https://img.icons8.com/3d-fluency/94/google-logo.png" alt="google-logo"/>
                                 <span>Login with Google</span>
                              </button>
 
-                             <button className="flex items-center justify-center space-x-10 border  border-purple-200 p-2 rounded-full w-3/4 mx-auto text-white">
+                             <button className="flex items-center justify-center space-x-10 border  bg-black/40 hover:opacity-70 cursor-pointer p-2 rounded-full w-3/4 mx-auto text-white">
                              <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/mac-os.png" alt="mac-os"/>
                                 <span>Login with Apple</span>
                              </button>

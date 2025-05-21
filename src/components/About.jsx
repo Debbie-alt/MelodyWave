@@ -5,25 +5,25 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import dynamic from 'next/dynamic'
 
-// const Tooltip = dynamic(() =>
-//   import("../components/ui/tooltip").then(mod => mod.Tooltip),
-//   { ssr: false }
-// );
+const Tooltip = dynamic(() =>
+  import("../components/ui/tooltip").then(mod => mod.Tooltip),
+  { ssr: false }
+);
 
-// const TooltipContent = dynamic(() =>
-//   import("../components/ui/tooltip").then(mod => mod.TooltipContent),
-//   { ssr: false }
-// );
+const TooltipContent = dynamic(() =>
+  import("../components/ui/tooltip").then(mod => mod.TooltipContent),
+  { ssr: false }
+);
 
-// const TooltipProvider = dynamic(() =>
-//   import("../components/ui/tooltip").then(mod => mod.TooltipProvider),
-//   { ssr: false }
-// );
+const TooltipProvider = dynamic(() =>
+  import("../components/ui/tooltip").then(mod => mod.TooltipProvider),
+  { ssr: false }
+);
 
-// const TooltipTrigger = dynamic(() =>
-//   import("../components/ui/tooltip").then(mod => mod.TooltipTrigger),
-//   { ssr: false }
-// );
+const TooltipTrigger = dynamic(() =>
+  import("../components/ui/tooltip").then(mod => mod.TooltipTrigger),
+  { ssr: false }
+);
 
 
 
@@ -50,7 +50,7 @@ const About = () => {
                     <hr className='mt-5' />
                 </div>
 
-                <div className='mt-20 -mx-5 sm:-mx-0'>
+                <div className='mt-20 md:mx-12 '>
                     <h3 className='text-yellow-300 font-semibold text-xl'>Developers and Contributors</h3>
                     
                     <figure className='glassycard w-[80vw] md:w-[60vw] lg:w-[40vw] p-12 mt-7' data-aos="slide-left" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", delay: 0.5, stiffness: 500, damping: 20 }}>
@@ -60,44 +60,44 @@ const About = () => {
                         <div className='flex space-x-5 mt-6 items-center'>
                             <p>Contact &rarr;</p>
 
-                            {/* <TooltipProvider>
+                            <TooltipProvider>
                                 <Tooltip>
-                                    <TooltipTrigger> */}
+                                    <TooltipTrigger>
                                         <a href="https://x.com/Faisal__Ali20">
                                             <img width="53" height="53" src="https://img.icons8.com/3d-fluency/94/twitter-circled.png" alt="twitter-circled"/>
                                         </a>
-                                    {/* </TooltipTrigger>
+                                    </TooltipTrigger>
                                     <TooltipContent>
                                         <p>Twitter</p>
                                     </TooltipContent>
                                 </Tooltip> 
-                             </TooltipProvider> */}
+                             </TooltipProvider>
 
-                            {/* <TooltipProvider>
+                            <TooltipProvider>
                                 <Tooltip>
-                                    <TooltipTrigger> */}
+                                    <TooltipTrigger>
                                         <a href="https://github.com/oluwa20">
                                             <img width="45" height="45" src="/purplegit.png"/>
                                         </a>
-                                    {/* </TooltipTrigger>
+                                    </TooltipTrigger>
                                     <TooltipContent>
                                         <p>GitHub</p>
                                     </TooltipContent>
                                 </Tooltip>
-                            </TooltipProvider>  */}
+                            </TooltipProvider> 
 
-                         {/* <TooltipProvider>
+                         <TooltipProvider>
                                 <Tooltip>
-                                    <TooltipTrigger> */}
+                                    <TooltipTrigger>
                                         <a href="https://www.linkedin.com/in/faisal-ali-adebambo-2a0263272/" target='_blank'>
                                             <img width="60" height="60" src="/pin.png" alt="linkedin"/>
                                         </a>
-                                    {/* </TooltipTrigger>
+                                    </TooltipTrigger>
                                     <TooltipContent>
                                         <p>LinkedIn</p>
                                     </TooltipContent>
                                 </Tooltip>
-                            </TooltipProvider>  */}
+                            </TooltipProvider> 
                         </div>
                     </figure>
 
@@ -110,44 +110,44 @@ const About = () => {
                         <div className='flex space-x-5 mt-6 items-center'>
                             <p className=''>Contact &rarr;</p>
 
-                             {/* <TooltipProvider>
+                             <TooltipProvider>
                                 <Tooltip>
-                                    <TooltipTrigger> */}
+                                    <TooltipTrigger>
                                         <a href="https://x.com/Funmi565">
                                             <img width="53" height="53" src="https://img.icons8.com/3d-fluency/94/twitter-circled.png" alt="twitter-circled"/>
                                         </a>
-                                    {/* </TooltipTrigger>
+                                    </TooltipTrigger>
                                     <TooltipContent>
                                         <p>Twitter</p>
                                     </TooltipContent>
                                 </Tooltip>
-                            </TooltipProvider>  */}
+                            </TooltipProvider> 
 
-                             {/* <TooltipProvider>
+                             <TooltipProvider>
                                 <Tooltip>
-                                    <TooltipTrigger> */}
+                                    <TooltipTrigger>
                                         <a href="https://github.com/Debbie-alt">
                                             <img width="45" height="45" src="/purplegit.png"/>
                                         </a>
-                                    {/* </TooltipTrigger>
+                                    </TooltipTrigger>
                                     <TooltipContent>
-                                        <p>GitHub</p> */}
-                                    {/* </TooltipContent>
+                                        <p>GitHub</p> 
+                                     </TooltipContent>
                                 </Tooltip>
-                            </TooltipProvider>  */}
+                            </TooltipProvider> 
 
-                            {/* <TooltipProvider>
+                            <TooltipProvider>
                                 <Tooltip>
-                                    <TooltipTrigger> */}
+                                    <TooltipTrigger>
                                         <a href="https://www.linkedin.com/in/funmilayo-fayemi-7112ab272/">
                                             <img width="60" height="60" src="/pin.png" alt="linkedin"/>
                                         </a>
-                                    {/* </TooltipTrigger>
+                                    </TooltipTrigger>
                                     <TooltipContent>
                                         <p>LinkedIn</p>
                                     </TooltipContent>
                                 </Tooltip>
-                            </TooltipProvider>  */}
+                            </TooltipProvider>  
                         </div>
                     </figure>
                 </div>
