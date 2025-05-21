@@ -49,21 +49,21 @@ export default function Login() {
                             </fieldset>
                             <button type="submit" className="mb-3 mt-5 px-10 py-2  rounded-full hover:opacity-80 bg-gradient-to-br from-yellow-200 via-black to-yellow-200 text-white">Login</button>
                         </form>
-                        <p className="text-white font-serif italic text-center mb-3">or</p>
+                        <p className="text-white font-serif italic text-center mb-3 mt-5">or</p>
                         {/* <hr/> */}
                           <div className="space-y-5">
-                             <button onClick={signInWithGoogle} className="flex items-center justify-center space-x-10border border-purple-600  bg-black/40 hover:opacity-70 cursor-pointer p-2 rounded-full w-3/4 mx-auto text-white">
+                             <button onClick={signInWithGoogle} className="flex items-center justify-center space-x-10 shadow-md  bg-black/40 hover:opacity-70 cursor-pointer p-2 rounded-full w-3/4 mx-auto text-white">
                              <img width="30" height="30" src="https://img.icons8.com/3d-fluency/94/google-logo.png" alt="google-logo"/>
                                 <span>Login with Google</span>
                              </button>
 
-                             <button className="flex items-center justify-center space-x-10 border  bg-black/40 hover:opacity-70 cursor-pointer p-2 rounded-full w-3/4 mx-auto text-white">
+                             <button className="flex items-center justify-center space-x-10 shadow-md  bg-black/40 hover:opacity-70 cursor-pointer p-2 rounded-full w-3/4 mx-auto text-white">
                              <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/mac-os.png" alt="mac-os"/>
                                 <span>Login with Apple</span>
                              </button>
                           </div> 
                     </figure>
-                    <p className="  mt-5">Don't have an account ? <Link href='/signup' className='text-yellow-300 hover:text-purple-200 text-lg mx-2'>Sign up here</Link></p>
+                    {/* <p className="  mt-5">Don't have an account ? <Link href='/signup' className='text-yellow-300 hover:text-purple-200 text-lg mx-2'>Sign up here</Link></p> */}
 
                 </section>
             </div>
