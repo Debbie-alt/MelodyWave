@@ -15,7 +15,7 @@ export default function Footer() {
         {/* Left - Logo and Tagline */}
         <div className="flex items-center gap-3">
           <DiscAlbum className="text-green-500" size={28} />
-          <span className="text-lg font-semibold text-white">StreamVibe</span>
+          <span className="text-lg font-semibold text-white">MelodyWave</span>
         </div>
 
         {/* Center - Nav Links */}
@@ -27,7 +27,7 @@ export default function Footer() {
             <Search size={16} /> Search
           </a>
           <a href="#" className="flex items-center gap-1 hover:text-green-500">
-            <Library size={16} /> Library
+            <Library size={16} /> Explore Music
           </a>
         </div>
 
